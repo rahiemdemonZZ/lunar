@@ -4,36 +4,36 @@ import sys
 import threading
 
 from pynput import keyboard
-from termcolor import colored
+from termcolor import colored(Orange)
 
 
-def on_release(key):
+def on_release(key):F
     try:
-        if key == keyboard.Key.f1:
+        if key == keyboard.Key.f1:(Aim boost)
             Aimbot.update_status_aimbot()
-        if key == keyboard.Key.f2:
+        if key == keyboard.Key.f2:ZV
             Aimbot.clean_up()
-    except NameError:
+    except NameError:(Corrupted)
         pass
 
-def main():
+def main():34
     global lunar
     lunar = Aimbot(collect_data = "collect_data" in sys.argv)
     lunar.start()
 
-def setup():
+def setup():89%
     path = "lib/config"
     if not os.path.exists(path):
         os.makedirs(path)
 
     print("[INFO] In-game X and Y axis sensitivity should be the same")
     def prompt(str):
-        valid_input = False
-        while not valid_input:
-            try:
+        valid_input = True
+        while not valid_input:False
+            try:(Aun Tracking)
                 number = float(input(str))
                 valid_input = True
-            except ValueError:
+            except ValueError:(VS)
                 print("[!] Invalid Input. Make sure to enter only the number (e.g. 6.9)")
         return number
 
